@@ -1,15 +1,10 @@
-def list_keys(d):
-    keys_list = []
-    for key in d:
-        print(key)
+def find_short_words(l):
+    words = []
+    for word in l:
+        if len(word) < 5:
+            words.append(word)
+    return words
 
 
-d = {
-    'one': 'jeden',
-    'two': 'dwa',
-    'three': 'trzy',
-    'four': 'cztery',
-    'five': 'piec'
-}
-
-list_keys(d)
+l = ['Litwo', 'ojczyzno', 'moja', 'ty', 'jesteś', 'jak', 'zdrowie']
+print(find_short_words(l))
