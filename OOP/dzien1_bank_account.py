@@ -60,11 +60,7 @@ class BankAccount:
 
 obj = BankAccount(12345)
 
-
-print(obj.cash)
-
-obj.deposit_cash(520)
-
+print(obj.deposit_cash(520))
 print(obj.withdraw_cash(200))
 print(obj.withdraw_cash(300))
 print(obj.withdraw_cash(300))
